@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Supermercado</title>
+</head>
+<body>
+	<div>
+		<h1>REGISTRO DE PRODUCTOS</h1>
+	</div>
+	<table>
+		<tr>
+			<td>
+				<form autocomplete="off" onsubmit="onFormSubmit()">
+					<div>
+						<label for="idProducto">Id del Producto
+						</label>
+						<input type="text" name="idProducto" id="idProducto">
+					</div>
+ 
+					<div>
+						<label for="producto">Nombre del Producto
+						</label>
+						<input type="text" name="producto" id="producto">
+					</div>
+
+					<div>
+						<label for="cantidad">Cantidad de Producto
+						</label>
+						<input type="number" name="cantidad" id="cantidad">
+					</div>
+
+					<div>
+						<label for="precio">Precio
+						</label>
+						<input type="number" name="precio" id="precio">
+					</div>
+
+					<div class="form_action--button">
+						<input type="submit" value="Aceptar">
+						<input type="reset" value="Eliminar">
+					</div>
+				</form>
+
+				<td>
+					<table class="lista" id="listaTienda">
+						<thead>
+							<tr>
+								<thead>Id Producto</thead>
+								<thead>Nombre del Producto</thead>
+								<thead>Cantidad</thead>
+								<thead>Precio</thead>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</td>
+			</td>
+		</tr>
+	</table>
+<script type="text/javascript" src="./logica.js"></script>
+</script>
+</body>
+</html>
