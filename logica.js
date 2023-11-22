@@ -39,6 +39,7 @@ function insertNewRecord(data) {
 }
 
 //Editar
+let = selectedRow;
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("idProducto").value = selectedRow.cells[0].innerHTML;
@@ -52,6 +53,7 @@ function updateRecord(formData) {
     selectedRow.cells[2].innerHTML = formData.cantidad;
     selectedRow.cells[3].innerHTML = formData.precio;
 }
+
 
 //Eliminar
 function onDelete(td) {
