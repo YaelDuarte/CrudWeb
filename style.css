@@ -1,29 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	color: #fca311;
+}
+label{
+	color: #fca311;
+}
+form{
+	background-color:#14213d ;
+}
 body{
-	background-image: url('fondoT.jpg');
-	background-repeat: no-repeat;
+	background-color: #000000;
+	/*background-image: url('fondoT.jpg');
+	background-repeat: no-repeat;*/
 	background-attachment: fixed;
 	background-size: cover;
 }
 
+thread{
+	background-color:#14213d; 
+	border-color: #e5e5e5;
+}
+
 table{
-	width: 80%;
+	width: 90%;
 	margin: 40px auto;
-	background: rgb(124, 154, 167);
+	/*background: rgb(124, 154, 167);*/
+	color:#fca311;	
+
 }
 
 table.lista{
+
 	text-align: center;
 	width: 100%;
+
 
 }
 
 td{
-	border: 1px solid rgb(204, 200, 200);
+	background-color: #14213d;
+	border: 1px solid #fca311;
 	text-align: left;
 	padding: 8px 15px;
+	
 }
 
-tr:nth-child(even), table.lista thread> tr{
+tr:nth-child(even), table.lista thread tr{
 	background-color: rgb(204, 200, 200);
 }
 
@@ -38,7 +63,7 @@ input[type="text"],input[type="number"]{
 
 input[type="submit"],input[type="reset"]{
 	background: #eee;
-	padding: 6px 12px;
+	padding: 4px 10px;
 	margin: 15px 0 10px;
 	display: inline-block;
 	border: none;
